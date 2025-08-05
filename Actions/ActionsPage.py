@@ -16,15 +16,15 @@ class Login_Page:
     def enter_email(self, email):
         enter_email = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(LoginLocators.EMAIL))
         enter_email.send_keys(email)
-        time.sleep(Config.WAIT_TIME)
+        time.sleep(10)
 
     def enter_password(self, password):
         enter_password = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(LoginLocators.PASSWORD))
         enter_password.send_keys(password)
-        time.sleep(Config.WAIT_TIME)
+        time.sleep(10)
 
     def click_submit(self, ):
         click_submit = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(LoginLocators.SUBMIT_BUTTON))
         click_submit.click()
-        time.sleep(Config.WAIT_TIME)
+        time.sleep(10)
 
