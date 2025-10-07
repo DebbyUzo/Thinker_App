@@ -30,13 +30,13 @@ class Action_Page:
         click_submit.click()
         time.sleep(10)
 
-class AddANewContact_Page:
+class AddNewContact_Page:
     def __init__(self, driver):
         self.driver = driver
 
-    def click_add_a_new_contact(self, ):
-        click_add_a_new_contact = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(AddANewContactLocators.ADD_A_NEW_CONTACT))
-        click_add_a_new_contact.click()
+    def click_add_new_contact(self, ):
+        click_add_new_contact = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(AddNewContactLocators.ADD_NEW_CONTACT))
+        click_add_new_contact.click()
         time.sleep(10)
 
 class AddContact_Page:

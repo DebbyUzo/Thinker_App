@@ -6,8 +6,8 @@ class LoginLocators:
     PASSWORD = (By.XPATH, "/html/body/div[3]/form/p[2]/input")
     SUBMIT_BUTTON = (By.ID, "submit")
 
-class AddANewContactLocators:
-    ADD_A_NEW_CONTACT = (By.ID, "add-contact")
+class AddNewContactLocators:
+    ADD_NEW_CONTACT = (By.ID, "add-contact")
 
 class AddContactLocators:
     FIRSTNAME = (By.ID, "firstName")
@@ -22,7 +22,7 @@ class AddContactLocators:
     COUNTRY = (By.ID, "country")
     SUBMIT  = (By.ID, "submit")
 
-class AddNewContactLocators:
+class AddANewContactLocators:
     ADD_NEW_CONTACT = (By.ID, "add-contact")
     FIRSTNAME1 = (By.ID, "firstName")
     LASTNAME1 = (By.ID, "lastName")
